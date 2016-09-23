@@ -1,27 +1,40 @@
-Open a new project; set the CRS by typing EPSG 3415 in the filter box and choosing ìSouth China Sea Lambertî
-Set up your modern georeferencing ëcanvasí
-Add Vector and load CHN_adm0.shp [a modern shapefile] to serve as georeferencing canvas.
-Add Vector: CHN_adm1.shp
+# Georeferencing with WHAM!
 
-For all ñ change the ìpropertiesî so they are not solid. Turn ìlabelsî on for one of the city files [you may have to use both of them]
-Download China 1863 Map
-Download Ifranview at http://www.irfanview.com/
-Use your Ifraview to convert the JPG file to TIFF
-In QGIS click on the Raster tab then slect georeferncer
+![Wham! in China](/Wham! in China.jpg)
 
-Use the georeferencer to add the TIFF version as a raster layer 
-In the Geoferencer select the add point button (looks like a yellow star)
-	Add a point on the Raster file. 
-	A box will open up (Enter Map Coordinates) 
-	Select "From Map Canvas"
-	Repeat this process 5 more times
+1 Open a new project; set the CRS by typing EPSG 3415 in the filter box and choosing ‚ÄúSouth China Sea Lambert‚Äù
 
-    
-    Have at least 3 in the western part of the country
-    Have more than 3 in the eastern part of the country
+2 Set up your modern georeferencing ‚Äòcanvas‚Äô
+* Add Vector and load CHN_adm0.shp [a modern shapefile] to serve as georeferencing canvas.
+* Add Vector: CHN_adm1.shp
 
-Specify transformation settings (Gold Cog)
-Select Start Georeferincing (Green Play button)
-Compare geo-referenced map to modern shapefile
+![Wham! in China 2](/Wham! in China 2.jpg)
 
-Save File
+3 For all ‚Äì change the ‚Äúproperties‚Äù so they are not solid. Turn ‚Äúlabels‚Äù on for one of the city files [you may have to use both of them]
+
+4 Download China 1863 Map
+
+5 Download Ifranview at http://www.irfanview.com/
+* Use Ifraview to convert the JPG file to TIFF
+![Geo Screenshot 2](/Geo Screenshot 2.png)
+ 
+6 In QGIS click on the Raster tab then select georeferncer
+* Use the georeferencer to add the TIFF version as a raster layer 
+![Geo Screenshot](/Geo Screenshot.png)
+
+7 In the Geoferencer select the add point button (looks like a yellow star)
+* Add a point on the Raster file. 
+* A box will open up (Enter Map Coordinates) 
+* Select "From Map Canvas"
+* Repeat this process 5 more times (Have at least 3 in the western part of the country
+ Have more than 3 in the eastern part of the country)
+
+8 Specify transformation settings (Gold Cog)
+
+9 Select Start Georeferincing (Green Play button)
+
+10 Compare geo-referenced map to modern shapefile
+
+11 Save File
+
+![Wham! in China 3](/Wham! in China 3.jpg)
