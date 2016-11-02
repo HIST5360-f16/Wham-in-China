@@ -4,7 +4,7 @@
 
 1 Open a new project (Select Project in the upper left hand corner of the screen); then press Cntrl+shift+p, and toggle on the setting “Enable on the fly CRS transformation”. Set the CRS by typing EPSG 3415 in the filter box and choosing “South China Sea Lambert”
 ![China CRS](http://i1092.photobucket.com/albums/i405/finbar01/China%20CRS_zpszf7rnulx.png)
-2 Set up your modern georeferencing ‘canvas’
+2 Set up your modern georeferencing ‘canvas’: this will give us a base map on which to work.
 * Add a vector layer by selecting CHN_adm0.shp [a modern shapefile] to serve as geo-referencing canvas.
 ![Add Layer](http://i70.photobucket.com/albums/i94/QueenOfTheMoon/Add%20Layer%20Screenshot.png)
 
@@ -25,7 +25,7 @@ Turn “labels” on for one of the city files [you may have to use both of them
 * Use Ifraview to convert the JPG file to TIFF
 ![Geo Screenshot 2](/Geo Screenshot 2.png)
  
-6 In QGIS click on the Raster tab then select geo-referencer
+6 In QGIS click on the Raster tab at the top of your screen then select geo-referencer. This will allow us to layer the 1863 map onto the shapefile of modern-day China.
 * Use the geo-referencer to add the TIFF version as a raster layer 
 ![Geo Screenshot](/Geo Screenshot.png)
 
@@ -34,7 +34,7 @@ Turn “labels” on for one of the city files [you may have to use both of them
 * A box will open up (Enter Map Coordinates) 
 * Select "From Map Canvas"
 * Repeat this process 5 more times (Have at least 3 in the western part of the country
- Have more than 3 in the eastern part of the country)
+ Have more than 3 in the eastern part of the country. It is also important to georeference different types of points. Remember, coastlines and waterways (like rivers) change over time, but the locations of cities usually stays the same, so be sure to georeference at least 2 cities: one in the east and one in the west).
 
 8 Specify transformation settings (Gold Cog)
 
@@ -42,6 +42,8 @@ Turn “labels” on for one of the city files [you may have to use both of them
 ![Georefrenced map](http://i1092.photobucket.com/albums/i405/finbar01/China%20Georefrenced_zpsc56t5hgi.png)
 10 Compare geo-referenced map to modern shapefile
 
-11 Save File
+11 Play around with the settings on your various layers: change border widths and labels to see how they compare. See what information you can glean from doing this.
+
+12 Save File. Close QGIS.
 
 ![Wham! in China 3](/Wham! in China 3.jpg)
